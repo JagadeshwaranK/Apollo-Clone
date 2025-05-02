@@ -1,0 +1,139 @@
+/* .doctorList {
+  flex: 1;
+  font-family: Arial, sans-serif;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.bookingButton {
+  background-color: #0070f3;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.bookingButton:hover {
+  background-color: #005bb5;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:disabled {
+  border-color: #ccc;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .doctorList {
+    width: 100%;
+    padding: 0 10px;
+  }
+} */
+
+
+.doctorList {
+  flex: 1;
+  font-family: Arial, sans-serif;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.listItem {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listItem h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.bookingButton {
+  background-color: #0070f3;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.bookingButton:hover {
+  background-color: #005bb5;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:disabled {
+  border-color: #ccc;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .doctorList {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .listItem {
+    width: 100%;
+  }
+}

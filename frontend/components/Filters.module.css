@@ -1,0 +1,32 @@
+.filters {
+  width: 250px;
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.filterGroup {
+  margin-bottom: 15px;
+}
+
+.filterGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .filters {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
