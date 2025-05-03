@@ -17,7 +17,7 @@ const DestinationPage = () => {
     maxFees: '',
     languages: [],
     availability: [],
-    feesRange: '', // added to track selected fees range string
+    feesRange: '', 
   });
   const [doctors, setDoctors] = useState([]);
   const [page, setPage] = useState(1);
@@ -43,7 +43,6 @@ const DestinationPage = () => {
       limit,
     };
 
-    // Convert array filters to comma separated strings
     Object.keys(queryObj).forEach((key) => {
       if (Array.isArray(queryObj[key])) {
         queryObj[key] = queryObj[key].join(',');
