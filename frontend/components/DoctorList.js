@@ -14,7 +14,6 @@ const DoctorList = ({ doctors, page, setPage, total, limit }) => {
 
   const handleBooking = (doctor, mode) => {
     alert(`Booking ${mode} consultation with ${doctor.name}`);
-    // Here you can implement actual booking logic or navigation
   };
 
   return (
