@@ -1,0 +1,16 @@
+{
+  "name": "apollo247-clone",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "cd backend && npm run dev",
+    "start-frontend": "cd frontend && npm run dev",
+    "build-frontend": "cd frontend && npm run build",
+    "build-backend": "echo \"No build step for backend\"",
+    "build": "npm run build-frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
