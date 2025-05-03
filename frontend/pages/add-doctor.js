@@ -35,7 +35,6 @@ const AddDoctor = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Prepare data
     const dataToSend = {
       ...formData,
       qualifications: formData.qualifications.split(',').map(q => q.trim()),

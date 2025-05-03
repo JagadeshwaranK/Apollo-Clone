@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
-    "start-backend": "cd backend && npm run dev",
-    "start-frontend": "cd frontend && npm run dev",
-    "build-frontend": "cd frontend && npm run build",
-    "build-backend": "echo \"No build step for backend\"",
-    "build": "npm run build-frontend",
+    "start": "node api.js && concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "node api.js && cd backend && npm run dev",
+    "start-frontend": "node api.js && cd frontend && npm run dev",
+    "build-frontend": "node api.js && cd frontend && npm run build",
+    "build-backend": "node api.js && echo \"No build step for backend\"",
+    "build": "node api.js && npm run build-frontend",
     "postinstall": "cd frontend && npm install"
   },
   "devDependencies": {
